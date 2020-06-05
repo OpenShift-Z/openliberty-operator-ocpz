@@ -1,0 +1,16 @@
+# Your Openshift cluster's API server endpoint URL
+# For example "api.ocpv4.example.com:6443"
+OPENSHIFT_API_URL="api.<SUB_DOMAIN>.<BASE_DOMAIN>:<PORT>"
+
+# Your Openshift cluster's internal registry route
+# For example "default-route-openshift-image-registry.apps.ocpv4.example.com"
+OPENSHIFT_REGISTRY_URL="default-route-openshift-image-registry.apps.<SUB_DOMAIN>.<BASE_DOMAIN>"
+
+# The id of an Openshift user that has kube admin privileges
+OPENSHIFT_USERNAME="kubeadmin"
+
+# The password of the admin user above
+OPENSHIFT_PASSWORD="supersecret"
+
+# The name of the Openshift project that want to use for this OpenLiberty application
+OPENSHIFT_PROJECT="openliberty-demo"

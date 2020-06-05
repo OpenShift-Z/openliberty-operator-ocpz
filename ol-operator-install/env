@@ -1,0 +1,21 @@
+# Your Openshift cluster's API server endpoint URL
+# For example "api.ocpv4.example.com:6443"
+OPENSHIFT_API_URL="api.<SUB_DOMAIN>.<BASE_DOMAIN>:<PORT>"
+
+# The id of an Openshift user that has kube admin privileges
+OPENSHIFT_USERNAME="kubeadmin"
+
+# The password of the admin user above
+OPENSHIFT_PASSWORD="supersecret"
+
+# The Openshift namespace into which the OpenLiberty application should be installed
+# Almost alway going to be "openshift-operators"
+OPERATOR_NAMESPACE="openshift-operators"
+
+# The Openshift namespace that the OpenLiberty should watch.
+# Speficy a null string "" to watch all namespaces
+WATCH_NAMESPACE='""'
+
+# The Open Liberty Operator version
+# See https://github.com/OpenLiberty/open-liberty-operator/tree/master/deploy/releases
+OPENLIBERTY_OPERATOR_VERSION="0.6.0"

@@ -1,0 +1,10 @@
+apiVersion: openliberty.io/v1beta1
+kind: OpenLibertyApplication
+metadata:
+  name: appmod
+spec:
+  applicationImage: image-registry.openshift-image-registry.svc:5000/<OPENSHIFT_PROJECT>/app-modernization:v1.0.0
+  expose: true
+  route:
+    host: 'modresort.apps.<SUB_DOMAIN>.<BASE_DOMAIN>'
+    path: '/resorts'
