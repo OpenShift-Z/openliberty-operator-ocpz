@@ -148,7 +148,7 @@ The creation of this single Custom Resource (CR) definition will result in the O
 1. Create an instance of an OpenLibertyApplication CR using the customized .yaml file above.  
   ```oc -n <OPENSHIFT_PROJECT> create -f app-mod-withroute_cr.yaml```  
   
-## Access the application in browser  
+## Access the application in a browser  
 
 1. Get the application's route & path  
   ```oc -n <OPENSHIFT_PROJECT> get routes```  
