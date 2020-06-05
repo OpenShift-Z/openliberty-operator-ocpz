@@ -86,7 +86,7 @@ env               | Envrironment variables (sourced by the shell scripts)
 
 ## Build and push the container image  
 Log onto a system where the Openshift `oc` cli tool, and either; a) Docker or b) podman & buildah are installed.  
-Copy the following files from the `ol_app_install` folder onto the system;
+Copy the following files from the `ol-app-install` folder onto the system;
 - Dockerfile
 - app-mod-withroute_cr.yaml
 - modresorts-1.0.war
