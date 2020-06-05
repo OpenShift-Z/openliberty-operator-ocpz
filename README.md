@@ -12,7 +12,7 @@ At a high level, the process shown here will demonstrate;
 - Installation of the Open Liberty Operator into an existing Openshift cluster running on IBM Z.
 - Building a container image containing a Open Liberty server with a simple demo web application (mod resorts).
 - Pushing the resulting container image to an Openshift internal image registry.
-- Deploying the application into an Openshift cluster, using an Open Liberty CRD, thereby leveraging the Open Liberty Operator.
+- Deploying the application into an Openshift cluster, using an OpenLibertyApplication CR, thereby leveraging the Open Liberty Operator.
 
 The demo application used (mod resorts) is admitedly a simple use-case, with no dependencies on external resources.  There will likely be dependencies on external resources in real-world applications.  There are many options for integrating applicaitions with those external resources (eg. ConfigMaps, Volume mounts, secrets, etc).  These are beyond the scope of this topic.
 
