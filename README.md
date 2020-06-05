@@ -1,5 +1,5 @@
 # openliberty-operator-ocpz
-Using the OpenLiberty Operator in Openshift on IBM Z
+Using the Open Liberty Operator in Openshift on IBM Z
 
 # Overview
 
