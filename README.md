@@ -22,7 +22,7 @@ In the example below, we will be using a pre-existing container image containing
 ## Pre-requisites
 
 - An Openshift 4.2 or 4.3 cluster running on IBM Z or LinuxONE
-  - A userid with cluster-amin privileges
+  - A userid with cluster-admin privileges
   - The cluster's image registry is configured with persistent storage
   - The cluster's image registry is exposed via the default route
 - A client system with the oc cli and either; a) Docker, or b) podman & buildah
