@@ -3,11 +3,15 @@
 #
 # See https://github.com/OpenLiberty/open-liberty-operator/tree/master/deploy/releases/0.5.1#installation
 #
-
-echo "Setting environment variables"
+echo "Setting environment variables.."
 unset KUBECONFIG
 
 . ./env
+
+if [ $OPENSHIFT_API_URL == "api.<SUB_DOMAIN>.<BASE_DOMAIN>:<PORT>" ]; then
+      echo "Please set the variables in the env file."
+      exit 1
+fi
 
 echo "OPERATOR_NAMESPACE=$OPERATOR_NAMESPACE"
 echo "WATCH_NAMESPACE=$WATCH_NAMESPACE"
