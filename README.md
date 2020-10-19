@@ -65,6 +65,8 @@ Name                            | Description
 2-uninstall-ol-operator.sh      | A simple shell script to uninstall the Open Liberty Operator using `oc` coomand line commands.
 env                             | Envrironment variables (sourced by the shell scripts)
 
+Please ensure proper executable permissions are set (e.g `chmod +x *.sh`) to run the scripts.
+
 # Use the operator to install an application
 
 Before we can run an Open Liberty application, we need to package Open Liberty with an application and it's configuration.

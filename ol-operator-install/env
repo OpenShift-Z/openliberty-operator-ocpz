@@ -1,12 +1,17 @@
 # Your Openshift cluster's API server endpoint URL
-# For example "api.ocpv4.example.com:6443"
-OPENSHIFT_API_URL="api.<SUB_DOMAIN>.<BASE_DOMAIN>:<PORT>"
+# For example "api.ocpv4.example.com:6443
+# Note, the API server's URL may or may not start with 'api' depending on your clusters setup
+OPENSHIFT_API_URL="c101-e.us-east.containers.cloud.ibm.com:32149"
+
+# Temporary OpenShift Token
+# This can be fetched from the GUI (click your username in the top right corner, then "Copy Login Command")
+OPENSHIFT_TOKEN="XXXX"
 
 # The id of an Openshift user that has kube admin privileges
-OPENSHIFT_USERNAME="kubeadmin"
+#OPENSHIFT_USERNAME="kubeadmin"
 
 # The password of the admin user above
-OPENSHIFT_PASSWORD="supersecret"
+#OPENSHIFT_PASSWORD="supersecret"
 
 # The Openshift namespace into which the OpenLiberty application should be installed
 # Almost alway going to be "openshift-operators"

@@ -3,8 +3,8 @@ kind: OpenLibertyApplication
 metadata:
   name: appmod
 spec:
-  applicationImage: image-registry.openshift-image-registry.svc:5000/<OPENSHIFT_PROJECT>/app-modernization:v1.0.0
+  applicationImage: image-registry.openshift-image-registry.svc:5000/openliberty-demo/app-modernization:v1.0.0
   expose: true
   route:
-    host: 'modresort.apps.<SUB_DOMAIN>.<BASE_DOMAIN>'
+    host: 'modresort.apps.c101-e.us-east.containers.cloud.ibm.com'
     path: '/resorts'
