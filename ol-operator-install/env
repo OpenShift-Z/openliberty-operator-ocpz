@@ -18,4 +18,4 @@ WATCH_NAMESPACE='""'
 
 # The Open Liberty Operator version
 # See https://github.com/OpenLiberty/open-liberty-operator/tree/master/deploy/releases
-OPENLIBERTY_OPERATOR_VERSION="0.6.0"
+OPENLIBERTY_OPERATOR_VERSION="0.7.0"
