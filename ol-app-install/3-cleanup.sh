@@ -28,10 +28,12 @@ else
 fi
 
 echo "Deleting Openliberty app"
-oc -n $OPENSHIFT_PROJECT delete OpenLibertyApplication appmod
+oc project $OPENSHIFT_PROJECT
+oc delete OpenLibertyApplication appmod
 
 sleep 5
 
 echo "Deleting $OPENSHIFT_PROJECT project"
 oc delete project $OPENSHIFT_PROJECT
-
+oc wait --for=delete project/${OPENSHIFT_PROJECT}
+oc wait --for=delete is/app-modernization
