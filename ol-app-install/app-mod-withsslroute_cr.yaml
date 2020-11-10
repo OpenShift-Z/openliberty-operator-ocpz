@@ -1,0 +1,17 @@
+apiVersion: openliberty.io/v1beta1
+kind: OpenLibertyApplication
+metadata:
+  name: appmod
+spec:
+  expose: true
+  route:
+    termination: reencrypt
+    path: '/resorts'
+    host: 'modresort.apps.<SUB_DOMAIN>.<BASE_DOMAIN>'
+  applicationImage: image-registry.openshift-image-registry.svc:5000/openliberty-demo/app-modernization:v1.0.0
+  pullPolicy: Always
+  service:
+    annotations:
+      service.beta.openshift.io/serving-cert-secret-name: appmod-svc-tls
+    certificateSecretRef: appmod-svc-tls
+    port: 9443
