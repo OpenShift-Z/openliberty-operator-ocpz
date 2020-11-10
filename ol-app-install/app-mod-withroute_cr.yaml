@@ -4,6 +4,7 @@ metadata:
   name: appmod
 spec:
   applicationImage: image-registry.openshift-image-registry.svc:5000/<OPENSHIFT_PROJECT>/app-modernization:v1.0.0
+  pullPolicy: Always
   expose: true
   route:
     host: 'modresort.apps.<SUB_DOMAIN>.<BASE_DOMAIN>'
