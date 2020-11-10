@@ -4,4 +4,4 @@ metadata:
   name: appmod
 spec:
   applicationImage: image-registry.openshift-image-registry.svc:5000/openliberty-demo/app-modernization:v1.0.0
-
+  pullPolicy: Always
